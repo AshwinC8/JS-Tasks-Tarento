@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task 1</title>
+    <link id="css" rel="stylesheet" type="text/css" href="./light.css">
+</head>
+<body>
+    <header>
+        <h1>CATS</h1>
+        <button onclick="darkOrLight()"><img src="./assets/dark_or_light.png" alt="darl/light"></button>
+    </header>
+    <div class="image_container">
+        <img id="cat_pic" alt="cat_pic">
+        <button id="cat_change" onclick="catChange()"><p>Change</p></button>
+    </div>
+
+    <script>
+        const cats = ["./assets/cat1.jpg", "./assets/cat2.jpg", "./assets/cat3.jpg", "./assets/cat4.jpg"]
+        var index = 0
+
+        document.getElementById("cat_pic").src = cats[index]
+
+        function catChange(){
+            index++;
+            index = index%cats.length;
+            document.getElementById("cat_pic").src = cats[index];
+        }
+        document.getElementById("cat_change").click()
+
+        var light = true
+        var light_css = "./light.css"
+        var dark_css = "./dark.css"
+
+        function darkOrLight(){
+            light = !light            
+            
+            if( light === true ){
+                document.getElementById("css").href = light_css
+            } else if ( light === false ){
+                document.getElementById("css").href = dark_css
+            }
+
+            console.log(document.getElementById("css").href)
+        }
+        
+    </script>
+</body>
+</html>

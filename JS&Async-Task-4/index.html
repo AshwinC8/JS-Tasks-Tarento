@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Basket Smash</title>
+</head>
+<body id="whole-body">
+<div class="background-image">
+    <h1>Basket Smash</h1>
+
+    <div class="first-section section">
+        <div class="timer">
+            <h2>Timer</h2>
+            <p id="timer-display">00:30</p>
+        </div>
+        <button id="start-button">
+            Start Timer
+        </button>
+    </div>
+
+    <div class="section" id="scoreboard">
+        <div class="team-section">
+            <h2 id="team-1-name">Team A</h2>
+            <p id="team-1-score">00</p>
+        </div>
+        <div class="team-section">
+            <h2 id="team-2-name">Team B</h2>
+            <p id="team-2-score">00</p>
+        </div>
+    </div>
+
+    <div class="section" id="playfeild">
+        <div class="basketball-court">
+            <video muted playsinline class="basket-video" id="team-1-basket" >
+                <source src="./assets/basket.mp4" type="video/mp4">
+            </video>
+            <p>Smash the <strong id="team-1-key">"A"</strong> key to score </p>
+        </div>
+        <div class="basketball-court">
+            <video muted playsinline class="basket-video" id="team-2-basket" >
+                <source src="./assets/basket.mp4" type="video/mp4">
+            </video>
+            <p> Smash the <strong id="team-2-key">"L"</strong> key to score </p>
+        </div>
+    </div>
+
+    <div class="section" id="result-section">
+        <h2> Result </h2>
+        <p id="result"></p>
+    </div>
+
+    <script src="./script.js"></script>
+</div>
+</body>
+</html>

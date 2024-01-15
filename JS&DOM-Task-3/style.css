@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "H1";
+    src: url("./fonts/Header/Homealone-nRm8g.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "scary_font";
+    src: url("./fonts/bloody-scary-font/BloodyScaryRegular-K7q8y.ttf");
+}
+
+body{
+    background-image: url("./assets/tv.jpg");
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tv_borders {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    border: 10px solid white;
+}
+
+#current_state {
+    color:  rgb(245, 104, 104);
+    font-size: 40px;
+    text-align: center;
+    width: 60%;
+    padding-bottom: 30px;
+}
+
+
+#next_state {
+    width: 80%;
+}
+
+h1 {
+    font-family: H1;
+    color: rgb(255, 22, 255);;
+    font-size: 60px;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    font-family: scary_font;
+}
+
+.next_state_2_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+
+.next_state_1_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.center_button {
+    color: white;
+    border: 5px solid #2A8A6D;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 20%;
+}
+
+#left_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+}
+
+
+#left_button img {
+    width: 50px;
+    height: 50px;
+}
+
+#left_button p{
+    width: 60%;
+}
+
+.right_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: transparent;
+    border: 0px;
+    gap: 10px;
+    color: white;
+}
+
+.right_button img {
+    width: 50px;
+    height: 50px;
+}
+
+.right_button p {
+    width: 60%;
+}
+
+.restart_state {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#story_image {
+    border: 8px solid #2A8A6D;
+    border-radius: 10px;
+    width: 60%;
+    align-self: center;
+    max-width: 500px;
+    height: 40%;
+    max-height: 400px;
+}
